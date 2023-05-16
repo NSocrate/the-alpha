@@ -1,0 +1,173 @@
+:root{
+    --primary : #0d6efd;
+    --dark : #21252f;
+    --body : #888;
+    --box-shadow : 0 8px 22px rgba(0,0,0,0.1);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo{
+    width: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s ease;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
+.hero{
+    position: relative;
+}
+.hero::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #0d6dfd3b;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.hero .col-lg-8 {
+    position: absolute;
+    align-content: center;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 2;
+}
+
+.hero p {
+    font-size: 25px;
+}
+
+section{
+    padding: 120px 0;
+}
+
+.section-title h6{
+    color: var(--primary)
+}
+.service{
+    border-radius: 7px;
+    box-shadow: var(--box-shadow);
+    transition: all 0.4s ease;
+}
+.service:hover{
+    transform: scale(1.07);
+}
+.service i{
+    font-size: 35px;
+    transition: all 0.5s ease;
+}
+
+.service:hover i{
+    font-size: 45px;
+    color: var(--primary);
+}
+
+.service ul{
+    list-style: none;
+}
+.membre img, .project img{
+    transition: all 0.4s ease;
+ }
+
+
+.social-icons {
+    position: absolute;
+    width: 100%;
+    transform: translate(3.35%,-100%);
+    transition: all 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+ }
+
+.membre:hover img, .project:hover img{
+    transform: scale(1.1);
+ }
+
+ .membre:hover .social-icons{
+    visibility: visible;
+    opacity: 1;
+ }
+
+.social-icons i{
+   font-size: 30px;
+   color: aliceblue;
+}
+.project{
+    position: relative;
+}
+.project-title{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 8px;
+    border-radius: 100%;
+    background-color: var(--primary);
+    top: 50%;
+    left: 50%;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    font-weight: 700;
+    color: white;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.project:hover .project-title{
+    visibility: visible;
+    opacity: 1;
+}
+
+form input.form-control{
+    height: 56px;
+}
+
+form textarea.form-control{
+    resize: none;
+}
+
+form .btn{
+    border-radius: 0;
+}
+
+form .form-control{
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.02);
+}
+
+footer{
+    background-color: var(--dark);
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-top{
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.footer-bottom{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px  solid rgba(255, 255, 255, 0.6);
+}
